@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply text-black-dark font-body;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply leading-heading;
+}
+
+p {
+  @apply leading-body;
+}
+
+h1 {
+  @apply text-3;
+}
+
+h2 {
+  @apply text-3;
+}
+
+h3 {
+  @apply text-2;
+}
+
+h4 {
+  @apply text-base;
+}
+
+h5 {
+  @apply text-base;
+}
+
+h6 {
+  @apply text-base;
+}
+
+p {
+  @apply text-base;
+}
+
+small {
+  @apply text-sm;
+}
+
+@screen desktop {
+  h1 {
+    @apply text-7;
+  }
+
+  h2 {
+    @apply text-6;
+  }
+
+  h3 {
+    @apply text-4;
+  }
+
+  h4 {
+    @apply text-3;
+  }
+
+  h5 {
+    @apply text-2;
+  }
+}
+
+@screen desktop_hd {}

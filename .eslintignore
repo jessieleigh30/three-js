@@ -1,0 +1,14 @@
+**/.next/*
+**/__tests__/
+**/node_modules/*
+**/out/*
+.DS_Store
+.env
+.sass-cache
+/build/
+/node_modules/
+/public/
+/server.bundle.js
+app/shared/libs/*.js
+dist
+npm-debug.log
