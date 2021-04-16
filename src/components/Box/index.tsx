@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
 
-
 const Box = (props) => {
   const mesh = useRef();
 
@@ -12,7 +11,7 @@ const Box = (props) => {
   return (
     <mesh {...props} ref={mesh}>
       <boxGeometry args={[1, 1, 1]} attach="geometry" />
-      <meshStandardMaterial attach="material" color="pink" wireframe />
+      <meshStandardMaterial attach="material" color="pink" />
     </mesh>
   );
 };
