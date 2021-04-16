@@ -85,6 +85,9 @@ module.exports = {
       heading: 1.32,
       body: 1.75,
     },
+    height: {
+      half: '50vh',
+    },
     screens: {
       tablet: '768px',
       desktop: '1024px',
