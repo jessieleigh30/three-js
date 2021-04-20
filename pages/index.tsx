@@ -6,8 +6,11 @@ import SideBySideLeft from '@components/SideBySideLeft';
 const ExampleView = () => {
   return (
     <>
-      <SideBySide />
-      <SideBySideLeft />
+      <div className="m-lg">
+        <h1>Three JS</h1>
+        <SideBySide />
+        <SideBySideLeft />
+      </div>
     </>
   );
 };

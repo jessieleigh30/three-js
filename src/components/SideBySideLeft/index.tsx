@@ -8,7 +8,10 @@ export const SideBySide = () => {
         <div>
           <SphereScene />
         </div>
-        <h1>Three JS Component</h1>
+        <div>
+          <h2>Three JS</h2>
+          <h3>Animation</h3>
+        </div>
       </div>
     </section>
   );
