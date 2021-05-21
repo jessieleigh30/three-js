@@ -19,8 +19,8 @@ body,
 body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: white;
-  background: #23395d;
+  color: black;
+  background-image: linear-gradient(#583FCD, #021945);
   user-select: none;
 }
 

@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import Crane from '@components/Crane';
+import Pacman from '@components/Pacman';
 
 function Loading() {
   return (
@@ -21,12 +21,11 @@ function Loading() {
 
 const ArcadeScene = () => {
   return (
-    <div className="h-half">
-      <Canvas camera={{ position: [0, 0, 2.5] }}>
+    <div className="h-full">
+      <Canvas camera={{ fov: 75, position: [0, 0, 5] }}>
         <ambientLight />
-        <pointLight position={[10, 10, 10]} />
         <Suspense fallback={<Loading />}>
-          <Crane />
+          <Pacman />
         </Suspense>
         <OrbitControls />
       </Canvas>

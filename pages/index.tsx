@@ -1,15 +1,13 @@
 import React from 'react';
 
-import SideBySide from '@components/SideBySide';
-import SideBySideLeft from '@components/SideBySideLeft';
+import SaturnScene from '@components/SaturnScene';
 
 const ExampleView = () => {
   return (
     <>
-      <div className="m-lg">
-        <h1>Three JS</h1>
-        <SideBySide />
-        <SideBySideLeft />
+      <div>
+        {/* <ArcadeScene /> */}
+        <SaturnScene />
       </div>
     </>
   );

@@ -87,6 +87,7 @@ module.exports = {
     },
     height: {
       half: '50vh',
+      full: '100vh',
     },
     screens: {
       tablet: '768px',
