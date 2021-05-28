@@ -41,7 +41,7 @@ const Stars = () => {
   }, []);
   useFrame(() => {
     //change to mesh to try and get the individual stars to move
-    group.current.rotation.y += 0.001;
+    mesh.current.rotation.y += 0.001;
   });
   return (
     <group ref={group}>
@@ -59,20 +59,17 @@ const Stars = () => {
 };
 const SaturnScene = () => {
   return (
-    console.log(Saturn, 'here'),
-    (
-      <div className="h-full">
-        <Canvas camera={{ fov: 75, position: [0, 0, 2.5] }}>
-          <ambientLight intensity={0.5} />
-          <pointLight position={[0, 0, 0]} color="white" />
-          <Suspense fallback={<Loading />}>
-            <Saturn />
-            <Stars />
-          </Suspense>
-          <OrbitControls />
-        </Canvas>
-      </div>
-    )
+    <div className="h-full">
+      <Canvas camera={{ fov: 75, position: [0, 0, 2.5] }}>
+        <ambientLight intensity={0.5} />
+        <pointLight position={[0, 0, 0]} color="white" />
+        <Suspense fallback={<Loading />}>
+          <Saturn />
+          <Stars />
+        </Suspense>
+        {/* <OrbitControls /> */}
+      </Canvas>
+    </div>
   );
 };
 
