@@ -27,7 +27,7 @@ const ArcadeScene = () => {
         <Suspense fallback={<Loading />}>
           <Pacman />
         </Suspense>
-        <OrbitControls />
+        {/* <OrbitControls /> */}
       </Canvas>
     </div>
   );

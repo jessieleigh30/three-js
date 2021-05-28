@@ -24,13 +24,9 @@ const Pacman = () => {
         <mesh visible geometry={nodes.ghost1.geometry}>
           <meshStandardMaterial attach="material" color="white" />
         </mesh>
-        {/* <mesh visible geometry={nodes.mesh_2.geometry}>
-          <meshStandardMaterial
-            attach="material"
-            color="black"
-            map={texture2}
-          />
-        </mesh> */}
+        <mesh visible geometry={nodes.mesh_2.geometry}>
+          <meshStandardMaterial attach="material" color="black" map={texture} />
+        </mesh>
       </group>
     )
   );

@@ -9,7 +9,7 @@ const SphereScene = () => {
       <Canvas camera={{ position: [0, 0, 2] }}>
         <ambientLight />
         <Sphere position={[0, 0, 0]} />
-        <OrbitControls />
+        {/* <OrbitControls /> */}
       </Canvas>
     </>
   );
