@@ -2,9 +2,7 @@ import * as THREE from 'three/src/Three';
 import React, { useRef, useMemo, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { useFrame } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
 import Saturn from '@components/Saturn';
-import { useHelper } from '@react-three/drei';
 
 function Loading() {
   return (
@@ -41,7 +39,7 @@ const Stars = () => {
   }, []);
   useFrame(() => {
     //change to mesh to try and get the individual stars to move
-    mesh.current.rotation.y += 0.001;
+    group.current.rotation.y += 0.001;
   });
   return (
     <group ref={group}>

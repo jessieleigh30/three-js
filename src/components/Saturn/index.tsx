@@ -18,34 +18,31 @@ const Saturn = () => {
     // group.current.rotation.y += 0.01;
   });
   return (
-    console.log(nodes, 'nodes'),
-    (
-      <group
-        ref={group}
-        position={[20, 0, -100]}
-        scale={[0.25, 0.25, 0.25]}
-        rotation={[0, 0, 0.5]}
-      >
-        <mesh visible geometry={nodes.Sphere.geometry}>
-          <meshStandardMaterial attach="material" map={texture} />
-        </mesh>
-        <mesh visible geometry={nodes.Sphere1.geometry}>
-          <meshStandardMaterial attach="material" map={texture} />
-        </mesh>
-        <mesh visible geometry={nodes.Sphere2.geometry}>
-          <meshStandardMaterial attach="material" map={texture} />
-        </mesh>
-        <mesh visible geometry={nodes.Sphere3.geometry}>
-          <meshStandardMaterial attach="material" map={texture} />
-        </mesh>
-        <mesh visible geometry={nodes.Tube.geometry}>
-          <meshStandardMaterial attach="material" map={texture} />
-        </mesh>
-        <mesh visible geometry={nodes.Tube1.geometry}>
-          <meshStandardMaterial attach="material" map={texture} />
-        </mesh>
-      </group>
-    )
+    <group
+      ref={group}
+      position={[20, 0, -100]}
+      scale={[0.25, 0.25, 0.25]}
+      rotation={[0, 0, 0.5]}
+    >
+      <mesh visible geometry={nodes.Sphere.geometry}>
+        <meshStandardMaterial attach="material" map={texture} />
+      </mesh>
+      <mesh visible geometry={nodes.Sphere1.geometry}>
+        <meshStandardMaterial attach="material" map={texture} />
+      </mesh>
+      <mesh visible geometry={nodes.Sphere2.geometry}>
+        <meshStandardMaterial attach="material" map={texture} />
+      </mesh>
+      <mesh visible geometry={nodes.Sphere3.geometry}>
+        <meshStandardMaterial attach="material" map={texture} />
+      </mesh>
+      <mesh visible geometry={nodes.Tube.geometry}>
+        <meshStandardMaterial attach="material" map={texture} />
+      </mesh>
+      <mesh visible geometry={nodes.Tube1.geometry}>
+        <meshStandardMaterial attach="material" map={texture} />
+      </mesh>
+    </group>
   );
 };
 
