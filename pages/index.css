@@ -7,7 +7,6 @@ body {
   color: black;
   overflow: hidden;
   transition: background 200ms ease-in-out;
-  /* background-image: linear-gradient(#583fcd, #021945); */
 }
 
 #__next {
@@ -34,7 +33,11 @@ h3,
 h4,
 h5,
 h6 {
-  @apply leading-heading;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
 }
 
 p {

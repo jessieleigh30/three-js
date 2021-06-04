@@ -1,6 +1,7 @@
 import React, { Suspense, useRef, useEffect, useMemo } from 'react';
 import * as THREE from 'three/src/Three';
 import Saturn from '@components/Saturn';
+import Asteroid from '@components/Asteroid';
 import state from '@components/State';
 import { Block } from '@components/Block';
 import { Canvas, useFrame } from '@react-three/fiber';
@@ -40,7 +41,7 @@ const Stars = () => {
   }, []);
   useFrame(() => {
     //change to mesh to try and get the individual stars to move
-    group.current.rotation.y += 0.001;
+    group.current.rotation.x += 0.0008;
   });
   return (
     <group ref={group}>
@@ -72,6 +73,7 @@ const HomeView = () => {
             offset={0}
             factor={1}
             bgColor={'linear-gradient(#583fcd, #021945)'}
+            title="Saturn"
           >
             <Saturn position={0} />
           </Block>
@@ -79,10 +81,16 @@ const HomeView = () => {
             offset={1}
             factor={1}
             bgColor={'linear-gradient(#B33C22, #021945)'}
+            title="Asteroid Belt"
           >
-            <Saturn position={0} />
+            <Asteroid position={0} />
           </Block>
-          <Block offset={2} factor={1} bgColor={'#BADA55'}>
+          <Block
+            offset={2}
+            factor={1}
+            bgColor={'linear-gradient(#BADA55,#021945)'}
+            title="Saturn ...Again"
+          >
             <Saturn position={0} />
           </Block>
         </Suspense>

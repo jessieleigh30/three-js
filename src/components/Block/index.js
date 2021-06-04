@@ -7,7 +7,7 @@ import { Html } from '@react-three/drei';
 
 const offsetContext = createContext(0);
 
-function Block({ children, offset, factor, bgColor, ...props }) {
+function Block({ children, offset, factor, bgColor, title, ...props }) {
   const { offset: parentOffset, sectionHeight, aspect } = useBlock();
   const ref = useRef();
   offset = offset !== undefined ? offset : parentOffset;
@@ -31,7 +31,9 @@ function Block({ children, offset, factor, bgColor, ...props }) {
       <group {...props} position={[0, -sectionHeight * offset * factor, 0]}>
         <group ref={ref}>
           <Html>
-            <span ref={refItem} />
+            <span ref={refItem}>
+              <h1>{title}</h1>
+            </span>
           </Html>
           {children}
         </group>
