@@ -1,27 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
   box-sizing: border-box;
 }
 
 html,
-body,
-#root {
-  width: 100vw;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: black;
-  background-image: linear-gradient(#583FCD, #021945);
+  background-image: linear-gradient(#583fcd, #021945);
   user-select: none;
+
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+    margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* canvas {
+  position: absolute;
+} */
+
+.scrollArea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 
 h1,
