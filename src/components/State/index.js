@@ -3,7 +3,7 @@ import { createRef } from 'react';
 const state = {
   sections: 3,
   pages: 3,
-  zoom: 75,
+  zoom: 0.75,
   top: createRef(),
 };
 

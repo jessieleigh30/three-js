@@ -68,14 +68,22 @@ const HomeView = () => {
         <pointLight position={[0, 0, 0]} color="white" />
         <Suspense fallback={<Loading />}>
           <Stars />
-          <Block offset={1} factor={1.5}>
-            <Saturn position={250} />
-          </Block>
-          <Block offset={1} factor={1.5}>
+          <Block
+            offset={0}
+            factor={1}
+            bgColor={'linear-gradient(#583fcd, #021945)'}
+          >
             <Saturn position={0} />
           </Block>
-          <Block offset={1} factor={1.5}>
-            <Saturn position={-250} />
+          <Block
+            offset={1}
+            factor={1}
+            bgColor={'linear-gradient(#B33C22, #021945)'}
+          >
+            <Saturn position={0} />
+          </Block>
+          <Block offset={2} factor={1} bgColor={'#BADA55'}>
+            <Saturn position={0} />
           </Block>
         </Suspense>
       </Canvas>

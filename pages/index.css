@@ -6,7 +6,8 @@ body {
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: black;
   overflow: hidden;
-  background-image: linear-gradient(#583fcd, #021945);
+  transition: background 200ms ease-in-out;
+  /* background-image: linear-gradient(#583fcd, #021945); */
 }
 
 #__next {
