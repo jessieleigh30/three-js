@@ -18,6 +18,10 @@ function Block({ children, offset, factor, ...props }) {
       0.1
     );
   });
+  // console.log(
+  //   { sectionHeight, offset, factor },
+  //   -sectionHeight * offset * factor
+  // );
   return (
     <offsetContext.Provider value={offset}>
       <group {...props} position={[0, -sectionHeight * offset * factor, 0]}>
@@ -30,11 +34,13 @@ function Block({ children, offset, factor, ...props }) {
 function useBlock() {
   const { sections, pages } = state;
   const { size, viewport } = useThree();
+  console.log(viewport, 'viewport');
   const offset = useContext(offsetContext);
   const viewportWidth = viewport.width;
   const viewportHeight = viewport.height;
   const canvasWidth = viewportWidth;
-  const canvasHeight = viewportHeight;
+  // this should be viewport height
+  const canvasHeight = 100;
   const mobile = size.width < 700;
   const margin = canvasWidth * (mobile ? 0.2 : 0.1);
   const contentMaxWidth = canvasWidth * (mobile ? 0.8 : 0.6);

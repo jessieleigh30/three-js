@@ -63,17 +63,23 @@ const HomeView = () => {
   useEffect(() => void onScroll({ target: scrollArea.current }), []);
   return (
     <>
-      <Canvas camera={{ fov: 75, position: [0, 0, 0] }}>
+      <Canvas camera={{ fov: 75, position: [0, 0, 120] }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[0, 0, 0]} color="white" />
         <Suspense fallback={<Loading />}>
           <Stars />
-          <Block offset={2} factor={1.5}>
-            <Saturn />
+          <Block offset={1} factor={1.5}>
+            <Saturn position={250} />
+          </Block>
+          <Block offset={1} factor={1.5}>
+            <Saturn position={0} />
+          </Block>
+          <Block offset={1} factor={1.5}>
+            <Saturn position={-250} />
           </Block>
         </Suspense>
       </Canvas>
-      <div ref={scrollArea} onScroll={onScroll}>
+      <div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
         <div style={{ height: `${state.pages * 100}vh` }} />
       </div>
     </>
