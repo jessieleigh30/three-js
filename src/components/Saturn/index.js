@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { useLoader, useFrame } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-const Saturn = () => {
+const Saturn = ({ position }) => {
   const group = useRef();
   const { nodes } = useLoader(GLTFLoader, 'models/saturn/Saturn.gltf');
   const texture = useLoader(
@@ -20,7 +20,7 @@ const Saturn = () => {
   return (
     <group
       ref={group}
-      position={[20, 0, -100]}
+      position={[20, position, 0]}
       scale={[0.25, 0.25, 0.25]}
       rotation={[0, 0, 0.5]}
     >
