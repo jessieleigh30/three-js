@@ -53,13 +53,13 @@ const Spaceship = ({ position, props }) => {
     THREE.TextureLoader,
     '/models/spaceship/textures/TubeSurface_Color.png'
   );
-  console.log(nodes, 'here'),
-    useFrame(() => {
-      // group.current.rotation.z += Math.PI / 2.75;
-      // group.current.rotation.x = Math.PI / -1.5;
-      // group.current.rotation.x += 0.01;
-      // group.current.rotation.y += 0.01;
-    });
+
+  useFrame(() => {
+    // group.current.rotation.z += Math.PI / 2.75;
+    // group.current.rotation.x = Math.PI / -1.5;
+    // group.current.rotation.x += 0.01;
+    // group.current.rotation.y += 0.01;
+  });
 
   return (
     <group
