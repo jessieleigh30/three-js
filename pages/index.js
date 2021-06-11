@@ -1,6 +1,7 @@
 import React, { Suspense, useRef, useEffect, useMemo } from 'react';
 import * as THREE from 'three/src/Three';
 import Saturn from '@components/Saturn';
+import Spaceship from '@components/Spaceship';
 import Asteroid from '@components/Asteroid';
 import state from '@components/State';
 import { Block } from '@components/Block';
@@ -41,7 +42,7 @@ const Stars = () => {
   }, []);
   useFrame(() => {
     //change to mesh to try and get the individual stars to move
-    group.current.rotation.x += 0.0008;
+    group.current.rotation.x += -0.0008;
   });
   return (
     <group ref={group}>
@@ -89,9 +90,9 @@ const HomeView = () => {
             offset={2}
             factor={1}
             bgColor={'linear-gradient(#BADA55,#021945)'}
-            title="Saturn ...Again"
+            title="Rocket Ship"
           >
-            <Saturn position={0} />
+            <Spaceship position={0} />
           </Block>
         </Suspense>
       </Canvas>
