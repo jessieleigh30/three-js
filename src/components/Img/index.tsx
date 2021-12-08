@@ -37,3 +37,5 @@ export const Img = ({ src, alt, withMobile = false, ...rest }: ImgProps) => {
     </ImageWrapper>
   );
 };
+
+export default Img;

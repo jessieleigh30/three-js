@@ -5,6 +5,7 @@ const { TABLET, DESKTOP } = breakpoints;
 
 export const LayoutContainer = styled.div`
   padding: 12px;
+  height: 100%;
 
   ${TABLET} {
     padding: 24px;

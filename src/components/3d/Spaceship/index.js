@@ -8,7 +8,7 @@ const Spaceship = ({ position, ...props }) => {
   const group = useRef();
   const { nodes, materials } = useLoader(
     GLTFLoader,
-    'models/spaceship/ship.gltf'
+    '/models/spaceship/ship.gltf'
   );
   const Extrude0 = useLoader(
     THREE.TextureLoader,

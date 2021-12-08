@@ -67,6 +67,7 @@ const WebGLView = () => {
   // @ts-ignore
   const onScroll = (e) => (state.top.current = e.target.scrollTop);
   useEffect(() => void onScroll({ target: scrollArea.current }), []);
+
   return (
     <>
       <Canvas camera={{ fov: 75, position: [0, 0, 120] }}>

@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 const Asteroid = () => {
   const group = useRef();
-  const gltf = useLoader(GLTFLoader, 'models/asteroid2/Asteroid.gltf');
+  const gltf = useLoader(GLTFLoader, '/models/asteroid2/Asteroid.gltf');
 
   // console.log(nodes, 'Here');
 
