@@ -1,11 +1,11 @@
 {
-  "name": "belly-template",
+  "name": "web-creativity",
   "author": "@underbelly",
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "typecheck": "tsc --pretty --noEmit",
     "format": "prettier --write .",
