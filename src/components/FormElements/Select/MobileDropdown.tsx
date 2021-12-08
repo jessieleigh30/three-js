@@ -1,4 +1,3 @@
-import { TypeScale } from '@identity/type';
 import React from 'react';
 
 import {
@@ -29,9 +28,7 @@ const MobileDropdown = ({
     <MobileDrop {...rest}>
       <MobileDropContainer onClick={() => ref?.current?.click()}>
         <Label hasSelected={!!selectedItem}>
-          <TypeScale.H4 fontWeight="300" fontSize={{ min: 21 }}>
-            {placeholder}
-          </TypeScale.H4>
+          <h4>{placeholder}</h4>
         </Label>
         <MobileSelect
           data-testid="mobile-select"
