@@ -1,6 +1,6 @@
 # Web Creativity
-Site to host awesome web components
 
+Site to host awesome web components
 
 ## ThreeJS
 
