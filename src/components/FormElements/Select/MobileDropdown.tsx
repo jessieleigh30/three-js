@@ -23,7 +23,7 @@ const MobileDropdown = ({
   placeholder,
   ...rest
 }: Props) => {
-  const ref = React.useRef<HTMLSelectElement>();
+  const ref = React.useRef<HTMLSelectElement>(null);
   return (
     <MobileDrop {...rest}>
       <MobileDropContainer onClick={() => ref?.current?.click()}>
@@ -37,7 +37,6 @@ const MobileDropdown = ({
           }
           value={selectedItem}
           hasSelected={!!selectedItem}
-          // @ts-ignore
           ref={ref}
         >
           <option key="featured" value="featured" />
