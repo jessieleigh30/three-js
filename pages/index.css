@@ -1,8 +1,102 @@
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Bold-Web.woff');
+  src: url('/fonts/Graphik-Bold-Web.eot');
+  src: url('/fonts/Graphik-Bold-Web.eot?#iefix')
+  format('embedded-opentype'),
+  url('/fonts/Graphik-Bold-Web.woff2') format('woff2'),
+  url('/fonts/Graphik-Bold-Web.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Semibold-Web.woff');
+  src: url('/fonts/Graphik-Semibold-Web.eot');
+  src: url('/fonts/Graphik-Semibold-Web.eot?#iefix')
+  format('embedded-opentype'),
+  url('/fonts/Graphik-Semibold-Web.woff2') format('woff2'),
+  url('/fonts/Graphik-Semibold-Web.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Medium-Web.woff');
+  src: url('/fonts/Graphik-Medium-Web.eot');
+  src: url('/fonts/Graphik-Medium-Web.eot?#iefix')
+  format('embedded-opentype'),
+  url('/fonts/Graphik-Medium-Web.woff2') format('woff2'),
+  url('/fonts/Graphik-Medium-Web.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Regular-Web.woff');
+  src: url('/fonts/Graphik-Regular-Web.eot');
+  src: url('/fonts/Graphik-Regular-Web.eot?#iefix')
+  format('embedded-opentype'),
+  url('/fonts/Graphik-Regular-Web.woff2') format('woff2'),
+  url('/fonts/Graphik-Regular-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('/fonts/Graphik-Light-Web.woff');
+  src: url('/fonts/Graphik-Light-Web.eot');
+  src: url('/fonts/Graphik-Light-Web.eot?#iefix')
+  format('embedded-opentype'),
+  url('/fonts/Graphik-Light-Web.woff2') format('woff2'),
+  url('/fonts/Graphik-Light-Web.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: block;
+}
+
+
+:root {
+  --color-blue: #00b5e2;
+  --color-gray: #cdd7e1;
+  --color-black: #1d252d;
+
+  --color-green: #00b2a9;
+  --color-orange: #ff8038;
+  --color-red: #d50032;
+
+  /* TypeScale */
+  --txt-15-20: clamp(15px, calc(15px + 5 * ((100vw - 320px) / 1120)), 20px);
+  --txt-18-20: clamp(18px, calc(18px + 2 * ((100vw - 320px) / 1120)), 20px);
+  --txt-21-30: clamp(21px, calc(21px + 9 * ((100vw - 320px) / 1120)), 30px);
+  --txt-24-40: clamp(24px, calc(24px + 16 * ((100vw - 320px) / 1120)), 40px);
+  --txt-27-60: clamp(27px, calc(27px + 33 * ((100vw - 320px) / 1120)), 60px);
+  --txt-36-80: clamp(36px, calc(36px + 44 * ((100vw - 320px) / 1120)), 80px);
+  --txt-54-100: clamp(54px, calc(54px + 66 * ((100vw - 320px) / 1120)), 120px);
+
+  --elevation1: 0 1px 4px rgba(35, 40, 48, 0.1), 0 4px 8px rgba(35, 40, 48, 0.1);
+  --elevation2: 0 4px 24px rgba(35, 40, 48, 0.06),
+  0 1px 6px rgba(35, 40, 48, 0.1), 0 4px 12px rgba(35, 40, 48, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: black;
   overflow: hidden;
@@ -10,8 +104,6 @@ body {
 }
 
 #__next {
-  width: 100vw;
-  height: 100vh;
   overflow: hidden;
 }
 canvas {
@@ -22,22 +114,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
   overflow: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: white;
-  position: absolute;
-  top: 0;
-  right: 0;
-  outline: none;
 }
 
 p {

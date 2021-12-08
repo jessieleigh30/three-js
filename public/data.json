@@ -1,0 +1,50 @@
+[
+  {
+    "title": "showcase",
+    "caseStudies": [
+      {
+        "title": "agency-metrics",
+        "description": "An internal time tracking metrics tool developed by Underbelly. MORE COMING SOON",
+        "technologies": [
+          "nodejs",
+          "nextjs",
+          "graphql"
+        ],
+        "hosted": ["vercel"],
+        "cms": ["contentful"]
+      },
+      {
+        "title": "gamerbot",
+        "description": "At underbelly we love foosball. We also love slack, so we created a slack bot to keep track of all the games we play. We then built a web view to see all our stats in one place",
+        "technologies": [
+          "nodejs",
+          "nextjs",
+          "firebase",
+          "slack"
+        ],
+        "hosted": ["netlify", "firebase", "aws"],
+        "cms": ["firebase"]
+      },
+      {
+        "title": "wiki",
+        "description": "Our company doubled in 2019 and all our new hire documents were located in a dropbox folder. Our dev team thought we could do better. Our wiki hosts all our company information and is now considered our Employee Handbook. The wiki includes a very powerful search engine powered by algolia. All the information is now hosted in Contentful. We have also created a slackbot to run a search on the wiki directly from slack. The slackbot is now an opensource project that you can use and contribute to. See the link below",
+        "technologies": [
+          "nodejs",
+          "nextjs",
+          "slack"
+        ],
+        "hosted": ["vercel", "aws"],
+        "cms": ["contentful"],
+        "otherLinks": [
+          {
+            "title": "Algolia Search Bot",
+            "url": "https://github.com/underbelly/algolia-search-bot"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "examples"
+  }
+]

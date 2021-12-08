@@ -87,3 +87,8 @@ small {
 
 @screen desktop_hd {
 }
+
+a {
+  text-decoration: none !important;
+  text-decoration-thickness: 0;
+}

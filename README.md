@@ -1,13 +1,7 @@
-# Belly Template
+# Web Creativity
+Site to host awesome web components
 
-Bootstrap a developer-friendly NextJS app configured with:
 
-- [Typescript](https://www.typescriptlang.org/)
-- Linting with [ESLint](https://eslint.org/)
-- Formatting with [Prettier](https://prettier.io/)
-- Linting, typechecking and formatting on by default using [`husky`](https://github.com/typicode/husky) for commit hooks
-- Testing with [Jest](https://jestjs.io/) and [`react-testing-library`](https://testing-library.com/docs/react-testing-library/intro)
+## ThreeJS
 
-## How to use
-
-Click the "Use this template" button to use this repository as a starting point for your next project.
+use https://gltf.pmnd.rs/ to convert gltf files to ReactThreeFiber ready components
