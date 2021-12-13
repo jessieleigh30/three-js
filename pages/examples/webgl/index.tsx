@@ -1,12 +1,15 @@
-import Link from 'next/link';
-import React from 'react';
+import { GetStaticProps } from 'next';
+import data from '@public/data.json';
 
-const WebGl = () => {
-  return (
-    <>
-      <Link href="/examples/webgl/3d">3D (theejs)</Link>
-    </>
-  );
+export { default } from '@views/Example';
+
+export const getStaticProps: GetStaticProps = async () => {
+  const example = data
+    .find((d) => d.title === 'examples')
+    .examples.find((d) => d.name === 'webgl');
+
+  return {
+    props: example,
+    revalidate: 60,
+  };
 };
-
-export default WebGl;

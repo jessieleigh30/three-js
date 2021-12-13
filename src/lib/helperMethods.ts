@@ -86,3 +86,14 @@ export const formatPhone = (string: any): string => {
     return string;
   }
 };
+
+export const toggleNoScroll = () => {
+  document.body.classList.toggle('no-scroll');
+};
+
+export const capitalize = (str: string) => {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+export const scrollToTop = (elem: HTMLElement) =>
+  elem?.scrollTo({ top: 0, behavior: 'smooth' });

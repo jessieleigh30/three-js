@@ -16,3 +16,18 @@ export interface CaseStudyPageProps {
   title?: string;
   caseStudies: Array<CaseStudyProps>;
 }
+
+export interface SandboxProps {
+  title: string;
+  description: string;
+  slug: string;
+  user?: string;
+  repo?: string;
+  type: string;
+}
+
+export interface ExampleProps {
+  name: string;
+  description: string;
+  sandboxes: Array<SandboxProps>;
+}

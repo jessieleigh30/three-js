@@ -45,6 +45,125 @@
     ]
   },
   {
-    "title": "examples"
+    "title": "examples",
+    "examples": [
+      {
+        "name": "d3",
+        "description": "D3 is one of our favorite tools for creating data visualizations. We love the freedom d3 gives us to create anything we can think of.",
+        "sandboxes": [
+          {
+            "title": "Simple Donut Chart",
+            "description": "Starting simple is the best way to get into d3. This code snippet shows a few concept in d3 version 5. When starting d3 and looking at examples make sure to look at the version number because although conceptually they work similar the syntax can be drastically different",
+            "slug": "d3-js-v5-donut-chart-8ziu9",
+            "type": "codesandbox"
+          },
+          {
+            "title": "Simple progress bar",
+            "description": "This is another very simple example. Looking at multiple simple examples will be a huge benefit for you when creating more complex visualizations. version 5",
+            "slug": "d3-progress-bar-7nliz",
+            "type": "codesandbox"
+          },
+          {
+            "title": "D3 Heatmap",
+            "description": "A heatmap visualization done with d3 v7",
+            "slug": "KKXpaWG",
+            "user": "maxwellsultan",
+            "type": "codepen"
+          },
+          {
+            "title": "Open source D3 Covid Data Visualization",
+            "description": "This project was a lot of fun. It started during one of our annual hacktober meetups. We wanted to create a project that could easily be contributed to and provide some helpful data in an easily digestible way. The project received pull requests from over 20 contributors and the project is looking great",
+            "slug": "github/mahowa/Covid-19-d3",
+            "repo": "https://github.com/mahowa/Covid-19-d3",
+            "type": "codesandbox"
+          }
+        ]
+      },
+      {
+        "name": "framer-motion",
+        "description": "",
+        "sandboxes": [
+          {
+            "title": "Reveal Package",
+            "description": "With a few files in this sandbox you can reveal any html element in any direction.",
+            "slug": "epic-kepler-5hv2z",
+            "type": "codesandbox"
+          }
+        ]
+
+      },
+      {
+        "name": "webgl",
+        "description": "",
+        "sandboxes": [
+          {
+            "title": "Basic React Three Fiber Example",
+            "description": "",
+            "slug": "basic-threejs-scene-with-react-three-fiber-06c9h",
+            "type": "codesandbox"
+          },
+          {
+            "title": "Gradient Material",
+            "description": "Create a gradient material and use it on an object in threejs",
+            "slug":"threejs-gradient-uzz2b",
+            "type": "codesandbox"
+          },
+          {
+            "title": "Imported 3D Model Example",
+            "description": "How to import an animated model into threejs",
+            "slug": "threejs-imported-model-d4irh",
+            "type": "codesandbox"
+          },
+          {
+            "title": "Animated gradient with Mouse controlled light",
+            "description": "Using a function to move a gradient around a plane while moving a light with your mouse pointer creates a cool effect. Its actually the effect we use for our footer on our main site underbelly.is",
+            "slug": "threejs-mouse-position-radial-gradient-background-using-lights-0031t",
+            "type": "codesandbox"
+          },
+          {
+            "title": "Haunted House",
+            "description": "A spooky scene set in a graveyard with ghosts - ThreeJS",
+            "slug": "haunted-house-3js-dvq8v",
+            "type": "codesandbox"
+          }
+        ]
+      },
+      {
+        "name": "react-hooks",
+        "description": "Hooks make state management easier so naturally we love them here. Here's a list of handy hooks we use all the time. If your just getting started with hooks here's an article you should read https://underbelly.is/writing-about/learning-more-about-react-hooks. Beware this is an older article and since the entire team has adopted and love hooks!",
+        "sandboxes": [
+          {
+            "title": "useEventListeners",
+            "description": "",
+            "slug": "useeventlisteners-wuz07",
+            "type": "codesandbox"
+          },
+          {
+            "title": "useScrollToHash",
+            "description": "A hook to scroll to an anchor point",
+            "slug": "usescrolltohash-4g5pl",
+            "type": "codesandbox"
+          },
+          {
+            "title": "useAsyncFormSubmit",
+            "description": "A Hook to simplify submitting forms",
+            "slug": "useasyncformsubmit-xz6wx",
+            "type": ""
+          },
+          {
+            "title": "useTimeout",
+            "description": "A Hook to take care of wrapping functions in a set timeout... The React way.",
+            "slug": "usetimeout-v8no5",
+            "type": ""
+          },
+          {
+            "title": "",
+            "description": "",
+            "slug": "",
+            "type": ""
+          }
+        ]
+      }
+    ]
   }
 ]

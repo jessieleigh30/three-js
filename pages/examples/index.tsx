@@ -3,12 +3,20 @@ import React from 'react';
 
 const Examples = () => {
   return (
-    <>
-      <Link href="/examples/webgl">Webgl</Link>
-      <Link href="/examples/d3">D3</Link>
-      <Link href="/examples/framer-motion">Framer Motion</Link>
-      <Link href="/examples/react-hooks">React Hooks</Link>
-    </>
+    <ul>
+      <li>
+        <Link href="/examples/webgl">Webgl</Link>
+      </li>
+      <li>
+        <Link href="/examples/d3">D3</Link>
+      </li>
+      <li>
+        <Link href="/examples/framer-motion">Framer Motion</Link>
+      </li>
+      <li>
+        <Link href="/examples/react-hooks">React Hooks</Link>
+      </li>
+    </ul>
   );
 };
 
