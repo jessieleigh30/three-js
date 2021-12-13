@@ -24,6 +24,7 @@ export interface SandboxProps {
   user?: string;
   repo?: string;
   type: string;
+  placeholder?: string;
 }
 
 export interface ExampleProps {

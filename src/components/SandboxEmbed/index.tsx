@@ -1,6 +1,7 @@
 import React from 'react';
 import { SandboxProps } from '@identity/types';
 import { SandboxContainer } from './styles';
+import ClickToLoad from '@components/ClickToLoad';
 
 /*
  autoresize -	Automatically resize the embed to the content (only works on Medium). -	0/1 -	0/*
@@ -24,23 +25,34 @@ import { SandboxContainer } from './styles';
 
 // https://codesandbox.io/embed/new?codemirror=1
 
-const SandboxEmbed = ({ slug, title, description, repo }: SandboxProps) => {
+const SandboxEmbed = ({
+  slug,
+  title,
+  description,
+  repo,
+  placeholder,
+}: SandboxProps) => {
   return (
     <SandboxContainer>
       <h3>{title}</h3>
       <p>{description}</p>
-      <iframe
-        src={`https://codesandbox.io/embed/${slug}?codemirror=1&autoresize=1`}
-        style={{
-          width: '100%',
-          height: '500px',
-          border: 0,
-          borderRadius: '4px',
-          overflow: 'hidden',
-        }}
-        allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-        sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-      />
+      <ClickToLoad
+        height={500}
+        img={placeholder ? `/images/placeholders/${placeholder}` : ''}
+      >
+        <iframe
+          src={`https://codesandbox.io/embed/${slug}?codemirror=1&autoresize=1`}
+          style={{
+            width: '100%',
+            height: '500px',
+            border: 0,
+            borderRadius: '4px',
+            overflow: 'hidden',
+          }}
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        />
+      </ClickToLoad>
 
       {repo && (
         <p>

@@ -75,7 +75,8 @@
             "description": "This project was a lot of fun. It started during one of our annual hacktober meetups. We wanted to create a project that could easily be contributed to and provide some helpful data in an easily digestible way. The project received pull requests from over 20 contributors and the project is looking great",
             "slug": "github/mahowa/Covid-19-d3",
             "repo": "https://github.com/mahowa/Covid-19-d3",
-            "type": "codesandbox"
+            "type": "codesandbox",
+            "placeholder": "d3covid19.png"
           }
         ]
       },
