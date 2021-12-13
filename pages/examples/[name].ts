@@ -3,10 +3,13 @@ import data from '@public/data.json';
 
 export { default } from '@views/Example';
 
+const havePaths = ['webgl'];
+
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = data
     .find((d) => d.title === 'examples')
-    .examples.map((ex) => ({ params: { name: ex.name } }));
+    .examples.filter((ex) => havePaths.includes(ex.name))
+    .map((ex) => ({ params: { name: ex.name } }));
 
   return { paths, fallback: 'blocking' };
 };
