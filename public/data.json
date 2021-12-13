@@ -148,19 +148,13 @@
             "title": "useAsyncFormSubmit",
             "description": "A Hook to simplify submitting forms",
             "slug": "useasyncformsubmit-xz6wx",
-            "type": ""
+            "type": "codesandbox"
           },
           {
             "title": "useTimeout",
             "description": "A Hook to take care of wrapping functions in a set timeout... The React way.",
             "slug": "usetimeout-v8no5",
-            "type": ""
-          },
-          {
-            "title": "",
-            "description": "",
-            "slug": "",
-            "type": ""
+            "type": "codesandbox"
           }
         ]
       }

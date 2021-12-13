@@ -6,8 +6,13 @@ export const PageWrapper = styled.div`
   height: 100%;
   max-height: 100vh;
 
+  a {
+    display: block;
+  }
+
   .svg-wrapper {
     max-height: 500px;
+    height: 100%;
     cursor: pointer;
 
     .animatedSvg {

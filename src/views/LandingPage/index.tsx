@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import WebCreativitySvg from '@components/SVGs/WebCreativity';
 import LottieSvg from '@components/LottieSvg';
+import SpotLight from '@components/Spotlight';
 import { By, PageWrapper } from './styles';
 
 const LandingPage = () => {
@@ -10,15 +11,17 @@ const LandingPage = () => {
     <PageWrapper>
       <WebCreativitySvg />
 
-      <Link href="/projects">
-        <div
-          onMouseEnter={() => setPlay(true)}
-          onMouseLeave={() => setPlay(false)}
-          className="svg-wrapper"
-        >
-          <LottieSvg path={`/lottie/dev-animation.json`} play={play} loop />
-        </div>
-      </Link>
+      <SpotLight>
+        <Link href="/projects" passHref>
+          <a
+            onMouseEnter={() => setPlay(true)}
+            onMouseLeave={() => setPlay(false)}
+            className="svg-wrapper"
+          >
+            <LottieSvg path={`/lottie/dev-animation.json`} play={play} loop />
+          </a>
+        </Link>
+      </SpotLight>
       <By>Powered By: The Underbelly Development Team</By>
     </PageWrapper>
   );
