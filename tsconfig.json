@@ -17,13 +17,10 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@views/*": ["src/views/*"],
-      "@patterns/*": ["src/patterns/*"],
-      "@typings/*": ["src/types/*"],
       "@identity/*": ["src/identity/*"],
-      "@containers/*": ["src/containers/*"],
       "@lib/*": ["src/lib/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@utils/*": ["./util/*"],
+      "@styles/*": ["src/styles/*"],
       "@public/*": ["./public/*"]
     },
     "incremental": true

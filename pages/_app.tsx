@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import PageTransition from '@components/PageTransition';
 
 import 'react-perfect-scrollbar/dist/css/styles.css';
-import './index.css';
+import '@styles/index.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
