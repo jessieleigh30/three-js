@@ -8,7 +8,7 @@ const havePaths = ['webgl'];
 export const getStaticPaths: GetStaticPaths = () => {
   const paths = data
     .find((d) => d.title === 'examples')
-    .examples.filter((ex) => havePaths.includes(ex.name))
+    .examples.filter((ex) => !havePaths.includes(ex.name))
     .map((ex) => ({ params: { name: ex.name } }));
 
   return { paths, fallback: 'blocking' };
